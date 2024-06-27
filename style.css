@@ -1,0 +1,461 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #181717e0;
+  background-color: #081620;
+}
+body {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+/* --------COR/TAMANHO------  */
+h1 {
+  color: #08fa6d;
+}
+.h1white {
+  color: white;
+  margin-bottom: 0;
+}
+.h1green {
+  color: #08fa6d;
+  margin-top: 0;
+}
+p {
+  text-align: justify;
+  color: white;
+}
+/* --------Navegação------  */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #081620;
+  padding: 0.8rem 0.6rem 0.8rem 0.6rem;
+  box-shadow: rgb(0, 0, 0) 0px 5px 10px;
+
+  & .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    padding-inline-start: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  & .navbar {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  & .nav-contemfilhos .pai::after,
+  .nav-contemfilhos1 .pai1::after {
+    content: "▾";
+  }
+
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+
+  & .button-nav {
+    display: flex;
+    padding: 0.8rem;
+    margin-right: 1rem;
+    border-radius: 0.6rem;
+    background-color: #08fa6dc0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0, 0, 0);
+    & a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+}
+/* --------SUBMENUS------  */
+
+.pai,
+.pai1 {
+  position: relative;
+}
+.submenu,
+.submenu1 {
+  display: none;
+}
+
+/* --------BUTTON HAMBURGUER------  */
+
+.hamburguer {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #08fa6d;
+  cursor: pointer;
+  padding: 0;
+}
+.hamburguer::before,
+.hamburguer::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #08fa6d;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* --------MAIN------  */
+
+/* --------QUEM SOU------  */
+
+.quem-somos {
+  padding-top: 5rem;
+}
+
+/* --------SECTION------  */
+.section {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* --------IMAGEM2/CONTATO------  */
+
+.imagem2 {
+  padding: 4rem 0;
+  background-image: url(imagens/imagen2-1080.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #081620a8;
+
+  & h1 {
+    text-align: center;
+  }
+  & p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+}
+.contato {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  background-color: black;
+  padding: 1rem 4rem;
+}
+
+.linkedin {
+  padding: 1rem 4.65rem;
+}
+/* --------NOSSA HISTRIA------  */
+
+.nossa-historia {
+  & h1 {
+    padding-top: 5rem;
+  }
+  & p {
+    padding-bottom: 5rem;
+  }
+}
+
+/* --------IMAGEM3/MISSAO, VISAO E VALORES------  */
+.imagem3 {
+  background-image: url(imagens/imagem\ 3\ -1080.jpg);
+  padding: 4rem 0 2.5rem 0;
+  background-position: center;
+  background-size: cover;
+}
+.missao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.8rem;
+  background-color: #081620a8;
+
+  & img {
+    border-radius: 0.8rem;
+  }
+
+  & p {
+    text-align: center;
+  }
+}
+
+/* --------FOOTER------  */
+footer {
+  background-color: rgba(0, 0, 0, 0.842);
+  padding: 2rem;
+}
+.rodape p {
+  text-align: center;
+  color: #fff;
+}
+.whats {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem;
+}
+/* --------CURSO------  */
+.curso {
+  margin-top: 15rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 500px;
+  margin: 0 auto;
+  color: white;
+  & label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  & .button-curso {
+    padding: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 21rem;
+    border-radius: 1.5rem;
+    background-color: #08fa6dc0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+  & input,
+  select,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.6rem;
+  }
+}
+/* --------CONFIRMAÇAO CURSO------  */
+.confirmaçao {
+  & h1 {
+    margin-top: 15rem;
+    text-align: center;
+  }
+  & p {
+    text-align: center;
+    padding-bottom: 59rem;
+  }
+}
+/* --------MEDIAQUERY------  */
+
+/* --------FUNÇAO HOVER------  */
+@media (min-width: 751px) {
+  /* --------IMAGEM1------  */
+  .imagem1 {
+    margin-top: 8rem;
+    height: 20rem;
+  }
+
+  .submenu,
+  .submenu1 {
+    flex-direction: column;
+    gap: 0.2rem;
+    z-index: 1;
+    position: absolute;
+    background-color: #ffffff;
+    height: auto;
+    width: 200px;
+    top: 49px;
+    border-radius: 0.5rem;
+    box-shadow: -1px 22px 22px 0px rgba(0, 0, 0, 0.384);
+
+    & li {
+      text-align: left;
+      padding: 0.5rem 1rem;
+    }
+  }
+  .nav-contemfilhos:hover .submenu {
+    display: flex;
+  }
+  .nav-contemfilhos1:hover .submenu1 {
+    display: flex;
+  }
+  .navbar {
+    & li:hover a:first-child {
+      transition: 0.5s;
+      color: #08fa6dc0;
+    }
+  }
+  .nav-contemfilhos:hover,
+  .nav-contemfilhos1:hover {
+    & .submenu,
+    .submenu1 {
+      display: absolute;
+    }
+  }
+  .submenu li:hover {
+    transition: 0.5s;
+    background-color: #106278;
+    & a:first-child {
+      color: #fff;
+    }
+  }
+  .submenu1 li:hover {
+    transition: 0.5s;
+    background-color: #106278;
+    & a:first-child {
+      color: #fff;
+    }
+  }
+  .whats:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s;
+  }
+
+  .button-nav:hover {
+    scale: 1.05;
+    transition: 0.1s;
+  }
+  .button-curso:hover {
+    scale: 1.02;
+    transition: ease-in-out;
+    cursor: pointer;
+  }
+  .contato:hover {
+    scale: 1.05;
+    transition: 0.2s;
+
+    & p {
+      color: #08fa6dc0;
+      transition: 0.2s;
+    }
+  }
+}
+
+/* --------------  */
+@media (max-width: 850px) {
+  .quem-somos,
+  .projetos,
+  .nossa-historia,
+  .missao,
+  .rodape {
+    width: 700px;
+  }
+}
+@media (max-width: 750px) {
+  .hamburguer {
+    display: block;
+    z-index: 1;
+  }
+
+  /* --------NAVBAR------  */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #081620;
+    clip-path: circle(100px at 90% -20%);
+    transition: 0.6s ease-out;
+
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.6rem;
+    gap: 3rem !important;
+    pointer-events: none;
+  }
+  .nav.active .navbar {
+    clip-path: circle(1500px at 90% -20%);
+    pointer-events: all;
+  }
+  .nav.active .hamburguer {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  nav.active .hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  nav.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .nav-contemfilhos.active .submenu,
+  .nav-contemfilhos1.active .submenu1 {
+    display: block;
+    padding: 0.8rem 0;
+  }
+  .pai,
+  .pai1 {
+    padding-bottom: 1rem;
+  }
+
+  /* --------SECTIONS------  */
+  .quem-somos,
+  .projetos,
+  .nossa-historia,
+  .missao,
+  .curso,
+  .confirmaçao {
+    width: 300px;
+  }
+  .missao P {
+    margin-top: 0;
+  }
+  .rodape {
+    width: 300px;
+  }
+
+  /* --------FONTS------  */
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  .curso {
+    & form {
+      width: 300px;
+    }
+  }
+}
+@media (min-width: 1050px) {
+  .submenu,
+  .submenu1 {
+    top: 45px;
+  }
+}

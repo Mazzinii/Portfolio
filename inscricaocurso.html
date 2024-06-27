@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link rel="shortcut icon" href="/imagens/icon.ico" type="image/x-icon" />
+    <title>TechYou</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="/index.html"
+          ><img src="imagens/logo 2.png" alt="" height="70"
+        /></a>
+        <div><button class="hamburguer" title="text"></button></div>
+        <div class="navbar">
+          <div class="button-nav">
+            <a href="/inscricaocurso.html"
+              ><span><b>INSCRIÇÃO CURSO</b></span></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="curso section">
+        <div class="container">
+          <h1>INSCRIÇÃO DO CURSO</h1>
+          <p>Para mais informações sobre alguns dos cursos:</p>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML e CSS</li>
+            <li>Python</li>
+            <li>Linguagem C</li>
+          </ul>
+          <p>é necessário preencher <b>todo</b> o formulário abaixo.</p>
+        </div>
+
+        <form
+          id="formulario"
+          action="https://formsubmit.co/techyoucodingcourse@gmail.com"
+          method="POST"
+        >
+          <label for="nome">Nome:</label>
+          <input class="inputnome" type="text" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input class="input" type="email" name="email" required />
+
+          <label for="menssagem">Como nos conheceu?</label>
+          <textarea
+            class="input"
+            name="message"
+            id="messagem"
+            required
+          ></textarea>
+
+          <label for="telefone">Celular com DDD:</label>
+          <input class="inputtelefone" type="tel" name="telefone" required />
+
+          <input
+            type="hidden"
+            name="_next"
+            value="https://techyou.netlify.app/thanks"
+          />
+
+          <button
+            class="button-curso"
+            type="submit"
+            onclick="setTimeout('clicado()',5000)"
+          >
+            <b>Enviar</b>
+          </button>
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nova inscrição do Curso!"
+          />
+          <input type="hidden" name="_template" value="table" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="section rodape">
+        <p>
+          © 2024 YouTech. Todos os direitos reservados. Telefone: (21)
+          98163-8108 | Email: techyoucodingcourse@gmail.com Política de
+          Privacidade | Termos de Uso
+        </p>
+      </div>
+      <a href="https://wa.me/+5521981638108 "
+        ><img class="whats" src="/imagens/whats-png.webp" alt="" width="70"
+      /></a>
+    </footer>
+  </body>
+</html>
