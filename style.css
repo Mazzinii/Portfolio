@@ -6,7 +6,7 @@ html {
   background-color: #081620;
 }
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
   padding: 0;
 }
@@ -119,7 +119,11 @@ p {
 /* --------QUEM SOU------  */
 
 .quem-somos {
-  padding-top: 5rem;
+  padding-top: 16rem;
+}
+.img1 {
+  display: flex;
+  justify-content: center;
 }
 
 /* --------SECTION------  */
@@ -177,6 +181,10 @@ p {
   }
   & p {
     padding-bottom: 5rem;
+
+    & b {
+      color: #08fa6d;
+    }
   }
 }
 
@@ -187,21 +195,63 @@ p {
   background-position: center;
   background-size: cover;
 }
+.flexprojeto {
+  display: flex;
+  flex-direction: row;
+}
 .missao {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  width: 400px;
+
+  padding: 0 1.5rem 1rem 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 0.8rem;
-  background-color: #081620a8;
+
+  background-color: #081620;
 
   & img {
     border-radius: 0.8rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  & .linguagem {
+    display: flex;
+    gap: 1rem;
+
+    & p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    & .html {
+      background-color: #e44d25;
+      padding: 0.5rem;
+      border-radius: 0.8rem;
+    }
+    & .css {
+      background-color: #274de5;
+      padding: 0.5rem;
+      border-radius: 0.8rem;
+    }
+    & .js {
+      background-color: #f7de1cec;
+      padding: 0.5rem;
+      border-radius: 0.8rem;
+    }
+  }
+
+  & h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
   }
 
   & p {
-    text-align: center;
+    margin-top: 0.5rem;
   }
 }
 
@@ -334,6 +384,11 @@ form {
     & a:first-child {
       color: #fff;
     }
+  }
+
+  .linguagem :hover {
+    scale: 1.05;
+    cursor: pointer;
   }
   .whats:hover {
     cursor: pointer;
