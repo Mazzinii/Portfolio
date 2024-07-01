@@ -4,9 +4,11 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   color: #181717e0;
   background-color: #081620;
+  scroll-behavior: smooth;
+  scroll-padding: 11rem;
 }
 body {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -17,10 +19,16 @@ h1 {
 .h1white {
   color: white;
   margin-bottom: 0;
+  border-left: 10px solid #08fa6d;
+  padding-left: 0.8rem;
+  border-top-left-radius: 0.8rem;
 }
 .h1green {
   color: #08fa6d;
   margin-top: 0;
+  border-left: 10px solid #08fa6d;
+  padding-left: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
 }
 p {
   text-align: justify;
@@ -33,7 +41,7 @@ p {
   left: 0;
   right: 0;
   background-color: #081620;
-  padding: 0.8rem 0.6rem 0.8rem 0.6rem;
+  padding: 0.8rem 0.6rem 0.2rem 1.2rem;
   box-shadow: rgb(0, 0, 0) 0px 5px 10px;
 
   & .nav {
@@ -64,6 +72,7 @@ p {
   & a {
     text-decoration: none;
     color: white;
+    font-weight: 500;
   }
 
   & .button-nav {
@@ -77,7 +86,7 @@ p {
       color: rgb(255, 255, 255);
       text-decoration: none;
       font-size: 1.6rem;
-      font-weight: 500;
+      font-weight: 600;
     }
   }
 }
@@ -119,7 +128,7 @@ p {
 /* --------QUEM SOU------  */
 
 .quem-somos {
-  padding-top: 16rem;
+  padding-top: 20rem;
 }
 .img1 {
   display: flex;
@@ -132,7 +141,7 @@ p {
   margin: 0 auto;
 }
 
-/* --------IMAGEM2/CONTATO------  */
+/* --------REDES------  */
 
 .imagem2 {
   padding: 4rem 0;
@@ -140,7 +149,7 @@ p {
   background-size: cover;
   background-position: center;
 }
-.projetos {
+.redes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,11 +182,15 @@ p {
 .linkedin {
   padding: 1rem 4.65rem;
 }
-/* --------NOSSA HISTRIA------  */
+/* --------NOSSA HISTORIA------  */
 
 .nossa-historia {
   & h1 {
-    padding-top: 5rem;
+    margin-top: 5rem;
+    border-left: 10px solid #08fa6d;
+    padding-left: 0.8rem;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
   }
   & p {
     padding-bottom: 5rem;
@@ -188,12 +201,15 @@ p {
   }
 }
 
-/* --------IMAGEM3/MISSAO, VISAO E VALORES------  */
-.imagem3 {
-  background-image: url(imagens/imagem\ 3\ -1080.jpg);
-  padding: 4rem 0 2.5rem 0;
-  background-position: center;
-  background-size: cover;
+/* --------PROJETOS------  */
+.tituloProj {
+  & h1 {
+    text-align: center;
+  }
+  & p {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
 }
 .flexprojeto {
   display: flex;
@@ -203,13 +219,13 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 355px;
 
   padding: 0 1.5rem 1rem 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 0.8rem;
 
-  background-color: #081620;
+  background-color: rgba(0, 0, 0, 0.692);
 
   & img {
     border-radius: 0.8rem;
@@ -222,7 +238,7 @@ p {
     gap: 1rem;
 
     & p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 600;
       margin: 0;
     }
@@ -244,7 +260,12 @@ p {
     }
   }
 
+  & a {
+    text-decoration: none;
+  }
+
   & h1 {
+    font-size: 2.4rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     color: #fff;
@@ -252,6 +273,7 @@ p {
 
   & p {
     margin-top: 0.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -414,14 +436,18 @@ form {
       transition: 0.2s;
     }
   }
+
+  .missao:hover {
+    scale: 1.05;
+    transition: 0.2s;
+  }
 }
 
 /* --------------  */
 @media (max-width: 850px) {
   .quem-somos,
-  .projetos,
+  .redes,
   .nossa-historia,
-  .missao,
   .rodape {
     width: 700px;
   }
@@ -480,16 +506,20 @@ form {
 
   /* --------SECTIONS------  */
   .quem-somos,
-  .projetos,
+  .redes,
   .nossa-historia,
-  .missao,
   .curso,
   .confirmaçao {
     width: 300px;
   }
-  .missao P {
-    margin-top: 0;
+  .missao {
+    width: 330px;
+
+    & .imgProjeto {
+      width: 359px;
+    }
   }
+
   .rodape {
     width: 300px;
   }
