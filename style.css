@@ -513,7 +513,7 @@ form {
   .curso,
   .confirmaçao,
   .projetos {
-    width: 350px;
+    width: 100vw;
   }
   .missao {
     width: 330px;
