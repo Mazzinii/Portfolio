@@ -11,6 +11,7 @@ body {
   font-size: 2rem;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 /* --------COR/TAMANHO------  */
 h1 {
@@ -58,7 +59,7 @@ p {
 
   & .navbar {
     display: flex;
-    margin: 10px;
+    margin: 1px;
     align-items: center;
     text-align: center;
     gap: 1.5rem;
@@ -127,8 +128,8 @@ p {
 
 /* --------QUEM SOU------  */
 
-.quem-somos {
-  padding-top: 20rem;
+.quem-sou {
+  padding-top: 10rem;
 }
 .img1 {
   display: flex;
@@ -445,7 +446,7 @@ form {
 
 /* --------------  */
 @media (max-width: 850px) {
-  .quem-somos,
+  .quem-sou,
   .redes,
   .nossa-historia,
   .rodape {
@@ -505,12 +506,13 @@ form {
   }
 
   /* --------SECTIONS------  */
-  .quem-somos,
+  .quem-sou,
   .redes,
   .nossa-historia,
   .curso,
-  .confirmaçao {
-    width: 300px;
+  .confirmaçao,
+  .projetos {
+    width: 450px;
   }
   .missao {
     width: 330px;
@@ -521,26 +523,17 @@ form {
   }
 
   .rodape {
-    width: 300px;
+    width: 375px;
   }
 
-  /* --------FONTS------  */
-  h1 {
-    font-size: 2rem;
+  .whats {
+    width: 65px;
   }
-  p {
-    font-size: 1.6rem;
-    text-align: justify;
-  }
-  .curso {
-    & form {
-      width: 300px;
+
+  @media (min-width: 1050px) {
+    .submenu,
+    .submenu1 {
+      top: 45px;
     }
-  }
-}
-@media (min-width: 1050px) {
-  .submenu,
-  .submenu1 {
-    top: 45px;
   }
 }
