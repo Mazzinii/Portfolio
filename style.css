@@ -513,7 +513,7 @@ form {
   .curso,
   .confirmaçao,
   .projetos {
-    width: 360px;
+    width: 350px;
   }
   .missao {
     width: 330px;
@@ -525,10 +525,6 @@ form {
 
   .rodape {
     width: 330px;
-  }
-
-  .whats {
-    width: 65px;
   }
 
   @media (min-width: 1050px) {
