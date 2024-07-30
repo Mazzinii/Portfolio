@@ -528,6 +528,7 @@ form {
 
   .whats {
     width: 65px;
+    right: 5px;
   }
 
   @media (min-width: 1050px) {
